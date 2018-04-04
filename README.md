@@ -4,7 +4,7 @@ Simple & safe unique id generator.
 
 NodeJS compatable but not published, get the code directly :)
 ```js
-const uid = require('simple-suid');
+const uid = require('/uid');
 
 uid(); // 16290fd3be3
 ```
