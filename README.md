@@ -1,6 +1,6 @@
 # js-uid
 
-Very simple unique and safe id generator.
+Very simple safe unique id generator.
 
 Node.JS
 ```js
