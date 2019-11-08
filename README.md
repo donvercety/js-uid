@@ -30,7 +30,7 @@ Browser
 ```
 
 ..or if you are modern :)
-```
+```js
 export const uid = (prev => {
     return () => {
         let date = Date.now();
