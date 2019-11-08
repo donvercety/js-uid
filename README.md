@@ -4,7 +4,7 @@ Simple & safe unique id generator.
 
 NodeJS compatable but not published, get the code directly :)
 ```js
-const uid = require('/uid');
+const uid = require('./uid');
 
 uid(); // 16290fd3be3
 ```
@@ -27,4 +27,21 @@ Browser
 
 </body>
 </html>
+```
+
+..or if you are modern :)
+```
+export const uid = (prev => {
+    return () => {
+        let date = Date.now();
+
+        if (date <= prev) {
+                date = ++prev;
+        } else {
+                prev = date;
+        }
+
+        return date.toString(36);
+    }
+})(0);
 ```
